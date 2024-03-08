@@ -12,8 +12,11 @@ void makeAry(int*& ary, unsigned int size) {
   ary = new int[size];
 }
 
-void loadRandom(int ary[], int size) {
+void loadRandom(int ary[], int size, unsigned int capacity) {
   for (int i=0; i<size; ++i) {
+    if(i >= capacity) {
+      resize(ary, capacity);
+    }
     ary[i] = rand()%1000;
   }
 }

@@ -17,7 +17,7 @@ const unsigned int CAPACITY = 100; // make largest size we will ever need
 void resize(int*&, unsigned int size, unsigned int newSize);
 void makeAry(int *&, unsigned int size);
 void print(const int ary[], unsigned int size);
-void loadRandom(int ary[], int size);
+void loadRandom(int ary[], int size,  unsigned int capacity);
 void insert(int val, unsigned int index, 
           int ary[], unsigned int size);
 void removeAtIndex(unsigned int index, 
